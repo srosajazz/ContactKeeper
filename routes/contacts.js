@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
 });
 
 //@route   PUT api/contacts
-//@desc     Update contact
+//@desc    Update contact
 //@access  Private
 router.put('/:id', (req, res) => {
   res.send('Update contacts');
@@ -30,3 +30,4 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   res.send('Delete contacts');
 });
+module.exports = router;
