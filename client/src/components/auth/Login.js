@@ -48,10 +48,10 @@ const Login = props => {
         Account <span className='text-primary'>Login</span>
       </h1>
       <form onSubmit={onSubmit}>
-        {/* email */}
         <div className='form-group'>
-          <label htmlFor='email'>E-mail</label>
+          <label htmlFor='email'>Email Address</label>
           <input
+            id='email'
             type='email'
             name='email'
             value={email}
@@ -59,10 +59,10 @@ const Login = props => {
             required
           />
         </div>
-        {/* password */}
         <div className='form-group'>
           <label htmlFor='password'>Password</label>
           <input
+            id='password'
             type='password'
             name='password'
             value={password}
@@ -70,9 +70,11 @@ const Login = props => {
             required
           />
         </div>
-
-        {/* submit */}
-        <input type='submit' value='Login' btn btn-primary btn-block />
+        <input
+          type='submit'
+          value='Login'
+          className='btn btn-primary btn-block'
+        />
       </form>
     </div>
   );
